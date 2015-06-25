@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="calendar.css">>
+<script>
+var beginDate = new Date();
+
+</script>
+</head>
+<body>
+  <div id = buttons>
+  <button onclick = "displayWeek">Week</button>
+  <button onclick = "displayMonth()">Month</button>
+  <button onclick = "displayYear()">Year</button>
+  <button onclick = "changeView()">Change View</button>
+</div>
+<!-- 	<div id = "weekDiv">
+    <table id="weekTable" style="width:70%" border="1" align = 'center'>
+      <tr>
+        <td>Monday</td>
+        <td>Tuesday</td>
+        <td>Wednesday</td>
+        <td>Thursday</td>
+        <td>Friday</td>
+        <td>Saturday</td>
+        <td>Sunday</td>
+       </tr>
+    </table> 
+  </div>  
+<div id = "monthDiv" style = "display: none;">
+  <table id="monthTable" style="width:90%" "height: 50%" border="1">
+  <tr>
+    <td>January</td>
+    <td>Febuary</td>
+    <td>March</td>
+    <td>April</td>
+    </tr>
+    <tr>
+    <td>May</td>
+    <td>June</td>
+    <td>July</td>
+    <td>August</td>
+    </tr>
+    <tr>
+    <td>September</td>
+    <td>October</td>
+    <td>November</td>
+    <td>December</td>
+  </tr>
+  </table>
+</div> -->
+
+<div class="selector">
+  <select name="month">
+    <option value="0">January</option>
+    <option value="1">February</option>
+    <option value="2">March</option>
+    <option value="3">April</option>
+    <option value="4">May</option>
+    <option value="5">June</option>
+    <option value="6">July</option>
+    <option value="7">August</option>
+    <option value="8">September</option>
+    <option value="19">October</option>
+    <option value="10">November</option>
+    <option value="11">December</option>
+  </select>
+  <select name="year">
+    <option value="2015">2012</option>
+    <option value="2014">2013</option>
+    <option value="2015">2014</option>
+    <option value="2015">2015</option>
+    <option value="2015">2016</option>
+    <option value="2015">2017</option>
+    <option value="2015">2018</option>
+    <option value="2015">2019</option>
+    <option value="2015">2020</option>
+    <option value="2015">2021</option>
+  </select>
+
+</div>
+
+<div id="month">
+
+</div>   
+  
+    <script>
+    // function yearView() {
+    //   for(var i = 2010; i < 2050; i++) {
+
+
+    //   }
+    // };
+    //   function changeView() {
+    //     var next = document.getElementById("weekTable");
+    //   next.parentNode.removeChild(next);
+    //   };
+    //   function displayMonth() {
+    //     if(document.getElementById("monthDiv").style.display = "block") {
+    //     document.getElementById("weekDiv").style.display = "none";
+    //     document.getElementById("yearDiv").style.display = "none";
+        
+    //   }
+    // };
+      /*
+      function displayWeek() {
+        if(document.getElementById("weekDiv").style.display = "block") {
+          document.getElementById("monthDiv").style.display = "none";
+          document.getElementById("yearDiv").style.display = "none";
+
+        }
+      }
+      function displayYear() {
+       if(document.getElementById("yearDiv").style.display = "block") {
+          document.getElementById("monthDiv").style.display = "none";
+          document.getElementById("weekDiv").style.display = "none";
+          
+      }*/
+
+
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
