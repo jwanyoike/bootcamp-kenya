@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+  
+</head>
+<body>
+  <h1>Calendar</h1>
+  <div id = top>
+  <div id = buttons>
+  <button onclick = "display_week();">Week View</button>
+  <button onclick = "yearDiv()">Year</button>
+  <p id = "daysDate"></p>
+  
+  <script>
+  var todays_date = new Date();
+  document.getElementById("daysDate").innerHTML = todays_date.toDateString();
+  </script>
+</div>
+ 	<div id = "weekDiv">
+    
+  </div>  
+  <div id = "yearDiv" style = "display: none;">
+  <table id="monthTable" style="width:90%" "height: 50%" border="1">
+  <tr>
+    <td>2010</td>
+    <td>2011</td>
+    <td>2012</td>
+    <td>2013</td>
+    </tr>
+    <tr>
+    <td>2014</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>2017</td>
+    </tr>
+    <tr>
+    <td>2018</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>2021</td>
+  </tr>
+  </table>
+</div> 
+<div class="selector" >
+  <select name="month">
+    <option value="0">January</option>
+    <option value="1">February</option>
+    <option value="2">March</option>
+    <option value="3">April</option>
+    <option value="4">May</option>
+    <option value="5" SELECTED>June</option>
+    <option value="6">July</option>
+    <option value="7">August</option>
+    <option value="8">September</option>
+    <option value="19">October</option>
+    <option value="10">November</option>
+    <option value="11">December</option>
+  </select>
+  <select name="year" >
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015" SELECTED>2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+  </select>
+
+</div>
+
+<div id="month">
+
+</div> 
+
+<div id="week">
+
+</div> 
+
+<div id="year">
+
+</div> 
+  
+    <script>
+    
+      function changeView() {
+        var next = document.getElementById("weekTable");
+       next.parentNode.removeChild(next);
+       };
+      function displayMonth() {
+        if(document.getElementById("monthDiv").style.display = "block") {
+        document.getElementById("weekDiv").style.display = "none";
+        document.getElementById("yearDiv").style.display = "none";
+        
+      }
+    };
+    </script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+  </body>
+</html>

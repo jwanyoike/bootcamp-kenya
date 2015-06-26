@@ -1,11 +1,14 @@
 body{
   font-family: sans-serif;
+  background-color: lightblue;
 }
 
 table{
   border: 1px;
   width:50%;
-  vertical-align: text-bottom;
+  vertical-align: top;
+  background-color: white;
+  //margin: 0 auto;
 }
 
 table,
